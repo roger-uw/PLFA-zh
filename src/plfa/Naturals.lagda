@@ -14,11 +14,11 @@ module plfa.Naturals where
 
 夜空中有着难以计数的星星，但其实只有不多于五千颗是肉眼可见的。
 可观测宇宙则包含了大约七百亿亿亿亿亿颗恒星。
-
+{::comment}
 The night sky holds more stars than I can count, though fewer than five
 thousand are visible to the naked eye.  The observable universe
 contains about seventy sextillion stars.
-
+{:/}
 
 星星的数量虽多却是有限的，而自然数的数量是无限的。就算用自然数把所有的星星都数尽了，
 剩余的自然数也和刚开始时一样多。
