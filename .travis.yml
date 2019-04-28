@@ -44,7 +44,6 @@ before_deploy:
     acknowledgements -i _config.yml >> _config.yml;\n\
   else\n\
     echo -e \"\\nbaseurl: \\\"/plfa-zh-test\\\"\\nurl: \\\"https://roger-uw.github.io\\\"\" >> _config.yml &&\n\
-    make build-offline &&\n\
     make clean &&\n\
     rm -rf .bundle/ vendor/ hs/ src/ extra/ .gitignore .travis.yml Gemfile Gemfile.lock Makefile;\n\
   fi"
