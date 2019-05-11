@@ -45,7 +45,7 @@ before_deploy:
     make clean &&\n\
     rm -rf .bundle/ vendor/ hs/ src/ extra/ .gitignore .travis.yml Gemfile Gemfile.lock Makefile;\n\
   else\n\
-    echo -e \"\\nbaseurl: \\\"/plfa-zh-test\\\"\\nurl: \\\"https://roger-uw.github.io\\\"\" >> _config.yml;\n\
+    sed -i 's/baseurl\\:\\s*\".*\"/baseurl: \"/plfa-zh-test\"/g ; s/url\\:\\s*\".*\"/url: \"https://roger-uw.github.io\"/g' _config.yml;\n\
   fi"
 
 branches:
